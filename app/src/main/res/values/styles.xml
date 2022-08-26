@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Настройте свою тему здесь. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/dark_red</item>
+        <item name="colorAccent">@color/gray</item>
+    </style>
+
+    <style name="BeatBoxButton">
+        <item name="android:background">@color/dark_blue
+        </item>
+    </style>
+    <style name="BeatBoxButton.Strong">
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
