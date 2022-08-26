@@ -12,7 +12,7 @@ class BeatBox(private val assets: AssetManager) {
     fun loadSounds(): List<String> {
         try {
             val soundNames = assets.list(SOUNDS_FOLDER)!!
-            Log.d(TAG, "Found${soundNames.size}sounds")
+            Log.d(TAG, "Found ${soundNames.size} sounds")
             return soundNames.asList()
         }catch (e: Exception){
             Log.e(TAG, "Could not list assets", e)
