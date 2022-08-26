@@ -1,5 +1,5 @@
-# BeatBox
+# Beat Box
 
 Приложение издает звуки и меняет цвет кнопки при нажатии
 
-![](app/src/main/res/drawable/Снимок экрана от 2022-08-26 23-13-13_1.png)
+![](app/src/main/res/drawable/screenshot_1.png)
