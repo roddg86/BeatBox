@@ -8,14 +8,14 @@ private const val TAG = "BeatBox"
 private const val SOUNDS_FOLDER = "sample_sounds"
 
 class BeatBox(private val assets: AssetManager) {
-    val sound: List<Sound>
+    val sounds: List<Sound>
 
     init {
-        sound = loadSounds()
+        sounds = loadSounds()
     }
 
     /* Получение списка активов */
-    fun loadSounds(): List<Sound> {
+    private fun loadSounds(): List<Sound> {
         val soundNames: Array<String>
 
         try {
