@@ -1,8 +1,12 @@
 package com.bignerdranch.android.beatbox
 
-import org.junit.Assert.*
+
+import org.hamcrest.core.Is.`is`
+import org.junit.Assert.assertThat
+
 
 import org.junit.Before
+import org.junit.Test
 
 class SoundViewModelTest {
     private lateinit var sound: Sound
@@ -16,5 +20,13 @@ class SoundViewModelTest {
         /* тестируемый обьект */
         subject = SoundViewModel()
         subject.sound = sound
+    }
+
+    /* Сам тест */
+    @Test
+    fun exposesSoundAsTitle(){
+        /* Свойство заголовка будет тем же что и имя звука */
+        /* тест проверяет функцию is */
+        assertThat(subject.title, `is`(sound.name))
     }
 }
