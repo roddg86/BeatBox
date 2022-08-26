@@ -1,9 +1,7 @@
 package com.bignerdranch.android.beatbox
 
-
 import org.hamcrest.core.Is.`is`
 import org.junit.Assert.assertThat
-
 
 import org.junit.Before
 import org.junit.Test
@@ -24,7 +22,7 @@ class SoundViewModelTest {
         /* Создание тестируемого объекта */
         sound = Sound("assetPath")
         /* тестируемый обьект */
-        subject = SoundViewModel()
+        subject = SoundViewModel(beatBox)
         subject.sound = sound
     }
 
